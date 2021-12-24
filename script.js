@@ -24,7 +24,7 @@ class Calculator {
   }
 
   delete() {
-
+    this.displayCurrent = this.displayCurrent.toString().slice(0, -1)
   }
 
   appendNumber(number) {
@@ -86,14 +86,6 @@ class Calculator {
 
 const calculator = new Calculator(displayCurrentTextElement, displayPreviousTextElement)
 
-/*
-allClearButton.forEach(button => {
-  button.addEventListener("click", () => {
-    calculator.clear()
-    calculator.updateDisplay()
-  })
-})
-*/
 
 allClearButton.addEventListener('click', button => {
   calculator.clear()
@@ -117,5 +109,10 @@ operationsButtons.forEach(button => {
 // We dont need the forEach, cause this is a single element in the HTML
 equalButton.addEventListener('click', button => {
   calculator.compute()
+  calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button => {
+  calculator.delete()
   calculator.updateDisplay()
 })
