@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(90deg, rgba(0,209,210,1) 0%, rgba(25,173,203,1) 100%);
+}
+
+.Calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* Those three upper elements centralizes everything inside the Calculator class. And the Min Height downwards set the vh (View height) to 100% of the screen */
+  min-height: 100vh;
+  font-size: 0px;
+  /*
+    !!! font-size in this case is to remove the space between the buttons elements inside the contanier. This space is a auto set from browsers.
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    If y dont use the div separation rows method, y can set the amount of rows and columns with those twoo commands.
+    And the minmax() atribute, sets the min and max size of the element.
+  */
+}
+
+.Output {
+  background-color: rgb(12, 0, 134);
+  width: 400px;
+  /*
+    grid-column: 1 / -1;
+    When using grid system, y can use this line to specify all de width in the columns.
+  */
+  min-height: 120px;
+  height: auto;
+  border: solid 2px;
+  border-bottom: none;
+  box-sizing: border-box;
+  font-size: 45px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around; /* Sets all the elements with equal distance in all directions */
+  /*  
+    flex-end put all the elements at the end.
+    flex-direction: column sets the elements to be put one down another
+  */
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.Result {
+  font-size: 25px;
+  color: rgba(255, 255, 255, .75);
+}
+
+.Current {
+  font-size: 40px;
+  color: rgba(255, 255, 255, .75);
+}
+
+button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  background: rgba(185, 247, 234, .6);
+  outline: none;
+  min-width: 100px;
+  min-height: 100px;
+  font-size: 25px;
+}
+button:hover {
+  background: rgba(185, 247, 234, .95);
+}
+.two_rows {
+  width: 200px;
+}

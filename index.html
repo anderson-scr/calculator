@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!-- defer e usado para fazer com que o script carrege primeiro que todo o restante da pagina. -->
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="Calculator">
+    <div class="Output">
+      <div class="Result" data-display-previous></div>
+      <div class="Current" data-display-current></div>
+    </div>
+    <div>
+      <button class="two_rows" data-all-clear>AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+    </div>
+    <div>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>*</button>
+    </div>
+    <div>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>-</button>
+    </div>
+    <div>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>+</button>
+    </div>
+    <div>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button class="two_rows" data-equal>=</button>
+    </div>
+  </div>
+</body>
+</html>
